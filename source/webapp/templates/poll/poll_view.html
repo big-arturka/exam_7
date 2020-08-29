@@ -22,14 +22,15 @@
     <h1 class="title">QUESTION</h1>
     <div class="card text-center">
         <div class="card-body">
-            <h4 class="card-title">{{ poll.question }}</h4>
+            <h4 class="card-title">Вопрос: {{ poll.question }}</h4>
             <a href="{% url 'answer' poll.pk %}" class="btn btn-primary">Пройти опрос</a>
             <a href="{% url 'poll_update' poll.pk %}" class="btn btn-primary">Изменить</a>
             <a href="{% url 'poll_delete' poll.pk %}" class="btn btn-primary">Удалить</a>
             <a href="{% url 'index' %}" class="btn btn-primary" >На главную</a>
             <div>
+                <h2>Варианты ответа:</h2>
                 {% for choice in choices %}
-                    <p>{{ choice.variant }}</p>
+                    <h1>{{ choice.variant }}</h1>
                     <a href="{% url 'choice_update' choice.pk %}" class="btn btn-primary">Изменить</a>
                     <a href="{% url 'choice_delete' choice.pk %}" class="btn btn-primary">Удалить</a>
                 {% endfor %}
@@ -39,6 +40,11 @@
         <div class="card-footer text-muted">
             Дата создания: {{ poll.created_at }}
         </div>
+    </div>
+    <div class="form">
+        <h1 class="title">Add new Choice</h1>
+        {% url 'choice_add' poll.pk as action_url %}
+        {% include 'partial/form.html' with action_url=action_url form_method='post' button_text='Сохранить'%}
     </div>
 </div>
 {% endblock %}

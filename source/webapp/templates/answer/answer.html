@@ -16,6 +16,7 @@
         <div class="card-body">
             <h4 class="card-title">{{ poll.question }}</h4>
             <form action="{% url 'answer' poll.pk %}" method="post">
+            {% if choices %}
                 {% for choice in choices %}
                     {% csrf_token %}
                         <div class="form-check form-check-inline">
@@ -25,6 +26,10 @@
                     {% endfor %}
                     <p><input class="btn btn-primary" type="submit" name="answers" value="Сохранить"></p>
                 </form>
+            {% else %}
+                <h1>В данном опросе отсутствуют варианты ответа. Повторите попытку позже.</h1>
+            {% endif %}
+
         </div>
 
         <div class="card-footer text-muted">

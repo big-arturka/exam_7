@@ -1,7 +1,6 @@
-from django.shortcuts import render, get_object_or_404
 from django.urls import reverse, reverse_lazy
 
-from webapp.forms import PollForm
+from webapp.forms import PollForm, ChoiceForm
 from webapp.models import Poll, Choice
 from django.views.generic import DetailView, CreateView, UpdateView, DeleteView, ListView
 
@@ -11,10 +10,9 @@ class IndexView(ListView):
     context_object_name = 'polls'
     paginate_by = 5
     paginate_orphans = 2
-    ordering = ['-created_at']
 
     def get_queryset(self):
-        return Poll.objects.all()
+        return Poll.objects.all().order_by('-created_at')
 
 
 class PollView(DetailView):
@@ -25,6 +23,7 @@ class PollView(DetailView):
         context = super().get_context_data(**kwargs)
         choices = self.object.choices.all()
         context['choices'] = choices
+        context['form'] = ChoiceForm()
 
         return context
 
