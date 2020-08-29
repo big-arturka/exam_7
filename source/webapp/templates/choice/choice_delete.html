@@ -3,9 +3,6 @@
 {% block title %}Delete{% endblock %}
 
 {% block menu %}
-    <li class="nav-item active">
-        <a class="nav-link" href="{% url 'poll_view' poll.pk %}">Отмена</a>
-    </li>
 {% endblock %}
 
 {% block content %}
@@ -16,7 +13,7 @@
         <div class="card-body">
             <h5 class="card-title">Вы действительно хотите удалить вариант ответа "{{ choice.variant }}"?</h5>
             <p><input type="submit" class="btn btn-primary btn-lg btn-block" value="Да"></p>
-            <a class="btn btn-primary btn-lg btn-block"  href="{% url 'poll_view' poll.pk %}">Нет</a>
+            <a class="btn btn-primary btn-lg btn-block"  href="{% url 'index' %}">Нет</a>
         </div>
     </form>
 </div>
