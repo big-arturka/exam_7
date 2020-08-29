@@ -1,0 +1,308 @@
+[
+{
+  "model": "webapp.poll",
+  "pk": 1,
+  "fields": {
+    "question": "\u041d\u0430\u0441\u043a\u043e\u043b\u044c\u043a\u043e \u0441\u043b\u043e\u0436\u043d\u043e \u043e\u0440\u0438\u0435\u043d\u0442\u0438\u0440\u043e\u0432\u0430\u0442\u044c\u0441\u044f \u0432 \u043d\u0430\u0448\u0435\u043c \u0432\u0435\u0431-\u0441\u0430\u0439\u0442\u0435?",
+    "created_at": "2020-08-29T06:21:44.988Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 2,
+  "fields": {
+    "question": "\u041d\u0430\u0441\u043a\u043e\u043b\u044c\u043a\u043e \u0441\u043b\u043e\u0436\u043d\u043e \u043d\u0430\u0439\u0442\u0438 \u043d\u0430 \u043d\u0430\u0448\u0435\u043c \u0432\u0435\u0431-\u0441\u0430\u0439\u0442\u0435 \u043d\u0443\u0436\u043d\u0443\u044e \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044e?",
+    "created_at": "2020-08-29T06:21:56.841Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 3,
+  "fields": {
+    "question": "\u0412 \u043a\u0430\u043a\u043e\u0439 \u0441\u0442\u0435\u043f\u0435\u043d\u0438 \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044f \u043d\u0430 \u043d\u0430\u0448\u0435\u043c \u0432\u0435\u0431-\u0441\u0430\u0439\u0442\u0435 \u043f\u043e\u043d\u044f\u0442\u043d\u043e\u0439?",
+    "created_at": "2020-08-29T06:22:07.696Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 4,
+  "fields": {
+    "question": "\u041a\u0430\u043a \u0412\u044b \u043e\u0446\u0435\u043d\u0438\u0432\u0430\u0435\u0442\u0435 \u0432\u043d\u0435\u0448\u043d\u0438\u0439 \u0432\u0438\u0434 \u043d\u0430\u0448\u0435\u0433\u043e \u0432\u0435\u0431-\u0441\u0430\u0439\u0442\u0430?",
+    "created_at": "2020-08-29T06:22:14.900Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 5,
+  "fields": {
+    "question": "\u041a\u0430\u043a \u0412\u044b \u043e\u0446\u0435\u043d\u0438\u0432\u0430\u0435\u0442\u0435 \u0430\u043a\u0442\u0443\u0430\u043b\u044c\u043d\u043e\u0441\u0442\u044c \u0441\u043e\u0434\u0435\u0440\u0436\u0430\u043d\u0438\u044f \u043d\u0430 \u043d\u0430\u0448\u0435\u043c \u0432\u0435\u0431-\u0441\u0430\u0439\u0442\u0435?",
+    "created_at": "2020-08-29T06:22:22.955Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 6,
+  "fields": {
+    "question": "\u041d\u0430\u0441\u043a\u043e\u043b\u044c\u043a\u043e \u0441\u043b\u043e\u0436\u043d\u043e, \u043f\u043e \u0412\u0430\u0448\u0435\u043c\u0443 \u043c\u043d\u0435\u043d\u0438\u044e, \u0441\u043a\u0430\u0447\u0438\u0432\u0430\u043d\u0438\u0435 \u0444\u0430\u0439\u043b\u043e\u0432 \u0441 \u043d\u0430\u0448\u0435\u0433\u043e \u0432\u0435\u0431-\u0441\u0430\u0439\u0442\u0430?",
+    "created_at": "2020-08-29T06:22:32.351Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 7,
+  "fields": {
+    "question": "\u041d\u0430\u0441\u043a\u043e\u043b\u044c\u043a\u043e \u0441\u043b\u043e\u0436\u043d\u044b\u043c \u0431\u044b\u043b\u043e \u043e\u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043b\u0435\u043d\u0438\u0435 \u043e\u043d\u043b\u0430\u0439\u043d-\u0437\u0430\u043a\u0430\u0437\u0430 \u043d\u0430 \u043d\u0430\u0448\u0435\u043c \u0432\u0435\u0431-\u0441\u0430\u0439\u0442\u0435?",
+    "created_at": "2020-08-29T06:22:42.933Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 8,
+  "fields": {
+    "question": "\u041d\u0430\u0441\u043a\u043e\u043b\u044c\u043a\u043e \u0412\u044b \u0434\u043e\u0432\u0435\u0440\u044f\u0435\u0442\u0435 \u043f\u0440\u043e\u0446\u0435\u0441\u0441\u0443 \u043e\u043d\u043b\u0430\u0439\u043d-\u0437\u0430\u043a\u0430\u0437\u043e\u0432 \u043d\u0430 \u043d\u0430\u0448\u0435\u043c \u0432\u0435\u0431-\u0441\u0430\u0439\u0442\u0435?",
+    "created_at": "2020-08-29T06:22:50.248Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 9,
+  "fields": {
+    "question": "\u041d\u0430\u0441\u043a\u043e\u043b\u044c\u043a\u043e \u0412\u044b \u0432 \u043e\u0431\u0449\u0435\u043c \u0434\u043e\u0432\u043e\u043b\u044c\u043d\u044b \u043d\u0430\u0448\u0438\u043c \u0432\u0435\u0431-\u0441\u0430\u0439\u0442\u043e\u043c?",
+    "created_at": "2020-08-29T06:23:02.206Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 10,
+  "fields": {
+    "question": "\u0412\u044b \u0431\u044b \u0440\u0435\u043a\u043e\u043c\u0435\u043d\u0434\u043e\u0432\u0430\u043b\u0438 \u043d\u0430\u0448 \u0432\u0435\u0431-\u0441\u0430\u0439\u0442 \u0434\u0440\u0443\u0433\u0438\u043c \u043b\u044e\u0434\u044f\u043c?",
+    "created_at": "2020-08-29T06:23:11.525Z"
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 1,
+  "fields": {
+    "variant": "\u041d\u043e\u0440\u043c\u0430\u043b\u044c\u043d\u043e",
+    "poll": 1
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 2,
+  "fields": {
+    "variant": "\u0421\u043b\u043e\u0436\u043d\u043e",
+    "poll": 1
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 3,
+  "fields": {
+    "variant": "\u041f\u0440\u043e\u0441\u0442\u043e",
+    "poll": 1
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 4,
+  "fields": {
+    "variant": "\u041d\u043e\u0440\u043c\u0430\u043b\u044c\u043d\u043e",
+    "poll": 2
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 5,
+  "fields": {
+    "variant": "\u0421\u043b\u043e\u0436\u043d\u043e",
+    "poll": 2
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 6,
+  "fields": {
+    "variant": "\u041f\u0440\u043e\u0441\u0442\u043e",
+    "poll": 2
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 7,
+  "fields": {
+    "variant": "\u041f\u043e\u043b\u043d\u043e\u0441\u0442\u044c\u044e \u043f\u043e\u043d\u044f\u0442\u043d\u0430",
+    "poll": 3
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 8,
+  "fields": {
+    "variant": "\u041d\u0435\u043f\u043e\u043d\u044f\u0442\u043d\u0430",
+    "poll": 3
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 9,
+  "fields": {
+    "variant": "\u041f\u043b\u043e\u0445\u043e",
+    "poll": 4
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 10,
+  "fields": {
+    "variant": "\u041d\u043e\u0440\u043c\u0430\u043b\u044c\u043d\u043e",
+    "poll": 4
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 11,
+  "fields": {
+    "variant": "\u0425\u043e\u0440\u043e\u0448\u043e",
+    "poll": 4
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 12,
+  "fields": {
+    "variant": "\u0410\u043a\u0442\u0443\u043b\u044c\u043d\u043e",
+    "poll": 5
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 13,
+  "fields": {
+    "variant": "\u041d\u0435 \u0430\u043a\u0442\u0443\u0430\u043b\u044c\u043d\u043e",
+    "poll": 5
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 14,
+  "fields": {
+    "variant": "\u0421 \u043f\u0435\u0440\u0435\u043c\u0435\u043d\u043d\u043e\u0439 \u0430\u043a\u0442\u0443\u0430\u043b\u044c\u043d\u043e\u0441\u0442\u044c\u044e",
+    "poll": 5
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 15,
+  "fields": {
+    "variant": "\u0412\u0441\u0451 \u043f\u0440\u043e\u0441\u0442\u043e",
+    "poll": 6
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 16,
+  "fields": {
+    "variant": "\u0421\u043b\u043e\u0436\u043d\u043e",
+    "poll": 6
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 17,
+  "fields": {
+    "variant": "\u041f\u0440\u043e\u0441\u0442\u043e",
+    "poll": 7
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 18,
+  "fields": {
+    "variant": "\u0421\u043b\u043e\u0436\u043d\u043e",
+    "poll": 7
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 19,
+  "fields": {
+    "variant": "\u041d\u043e\u0440\u043c\u0430\u043b\u044c\u043d\u043e",
+    "poll": 8
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 20,
+  "fields": {
+    "variant": "\u041d\u0435 \u0434\u043e\u0432\u0435\u0440\u044f\u044e",
+    "poll": 8
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 21,
+  "fields": {
+    "variant": "\u041f\u043e\u043b\u043d\u043e\u0441\u0442\u044c\u044e",
+    "poll": 8
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 22,
+  "fields": {
+    "variant": "\u041e\u0447\u0435\u043d\u044c \u0434\u043e\u0432\u043e\u043b\u0435\u043d",
+    "poll": 9
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 23,
+  "fields": {
+    "variant": "\u0412 \u0441\u0440\u0435\u0434\u043d\u0435\u043c \u0434\u043e\u0432\u043e\u043b\u0435\u043d",
+    "poll": 9
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 24,
+  "fields": {
+    "variant": "\u0412\u043e\u043e\u0431\u0449\u0435 \u043d\u0435 \u0434\u043e\u0432\u043e\u043b\u0435\u043d",
+    "poll": 9
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 25,
+  "fields": {
+    "variant": "\u0414\u0430",
+    "poll": 10
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 26,
+  "fields": {
+    "variant": "\u041d\u0435\u0442",
+    "poll": 10
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$jjgSdu88oq0S$2BPTvwm7fu2oeHjypT4YlzuZPihIoJ6rOxtHwZ9WvaE=",
+    "last_login": "2020-08-29T06:09:25.043Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@admin.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2020-08-29T05:28:53.180Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
