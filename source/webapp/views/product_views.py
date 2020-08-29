@@ -9,7 +9,7 @@ from webapp.views.base_views import SearchView
 
 
 class IndexView(SearchView):
-    template_name = 'product/index.html'
+    template_name = 'poll/index.html'
     context_object_name = 'products'
     paginate_by = 5
     paginate_orphans = 2
@@ -29,7 +29,7 @@ class IndexView(SearchView):
 
 
 class CategoryView(SearchView):
-    template_name = 'product/category_view.html'
+    template_name = 'poll/category_view.html'
     context_object_name = 'products'
     paginate_by = 5
     paginate_orphans = 2
@@ -51,12 +51,12 @@ class CategoryView(SearchView):
 
 
 class ProductView(DetailView):
-    template_name = 'product/product_view.html'
+    template_name = 'poll/poll_view.html'
     model = Product
 
 
 class ProductCreateView(CreateView):
-    template_name = 'product/product_create.html'
+    template_name = 'poll/poll_create.html'
     form_class = ProductForm
     model = Product
 
@@ -65,7 +65,7 @@ class ProductCreateView(CreateView):
 
 
 class ProductUpdateView(UpdateView):
-    template_name = 'product/product_update.html'
+    template_name = 'poll/poll_update.html'
     form_class = ProductForm
     model = Product
 
@@ -74,6 +74,6 @@ class ProductUpdateView(UpdateView):
 
 
 class ProductDeleteView(DeleteView):
-    template_name = 'product/product_delete.html'
+    template_name = 'poll/poll_delete.html'
     model = Product
     success_url = reverse_lazy('index')
