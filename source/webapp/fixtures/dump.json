@@ -288,6 +288,183 @@
   }
 },
 {
+  "model": "webapp.choice",
+  "pk": 27,
+  "fields": {
+    "variant": "\u041f\u043e\u0439\u0434\u0435\u0442",
+    "poll": 1
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 28,
+  "fields": {
+    "variant": "\u0422\u0430\u043a \u0441\u0435\u0431\u0435",
+    "poll": 1
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 32,
+  "fields": {
+    "variant": "\u0412\u043e\u0437\u043c\u043e\u0436\u043d\u043e",
+    "poll": 10
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 2,
+  "fields": {
+    "poll": 1,
+    "variant": 1,
+    "created_at": "2020-08-29T09:25:48.428Z"
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 3,
+  "fields": {
+    "poll": 5,
+    "variant": 14,
+    "created_at": "2020-08-29T09:26:32.217Z"
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 4,
+  "fields": {
+    "poll": 2,
+    "variant": 5,
+    "created_at": "2020-08-29T09:27:06.668Z"
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 6,
+  "fields": {
+    "poll": 10,
+    "variant": 25,
+    "created_at": "2020-08-29T10:12:04.198Z"
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 7,
+  "fields": {
+    "poll": 10,
+    "variant": 26,
+    "created_at": "2020-08-29T10:31:22.892Z"
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 8,
+  "fields": {
+    "poll": 10,
+    "variant": 32,
+    "created_at": "2020-08-29T10:31:33.725Z"
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 9,
+  "fields": {
+    "poll": 10,
+    "variant": 26,
+    "created_at": "2020-08-29T10:33:59.608Z"
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 10,
+  "fields": {
+    "poll": 5,
+    "variant": 12,
+    "created_at": "2020-08-29T11:52:30.066Z"
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 11,
+  "fields": {
+    "poll": 5,
+    "variant": 13,
+    "created_at": "2020-08-29T12:26:04.280Z"
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 12,
+  "fields": {
+    "poll": 4,
+    "variant": 9,
+    "created_at": "2020-08-29T12:27:05.771Z"
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 13,
+  "fields": {
+    "poll": 8,
+    "variant": 20,
+    "created_at": "2020-08-29T12:27:19.885Z"
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 14,
+  "fields": {
+    "poll": 9,
+    "variant": 24,
+    "created_at": "2020-08-29T12:27:35.886Z"
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 15,
+  "fields": {
+    "poll": 9,
+    "variant": 24,
+    "created_at": "2020-08-29T12:28:05.118Z"
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 16,
+  "fields": {
+    "poll": 9,
+    "variant": 23,
+    "created_at": "2020-08-29T12:28:11.822Z"
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 17,
+  "fields": {
+    "poll": 10,
+    "variant": 26,
+    "created_at": "2020-08-29T12:29:13.744Z"
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 18,
+  "fields": {
+    "poll": 10,
+    "variant": 25,
+    "created_at": "2020-08-29T12:29:22.772Z"
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 19,
+  "fields": {
+    "poll": 10,
+    "variant": 26,
+    "created_at": "2020-08-29T12:29:29.528Z"
+  }
+},
+{
   "model": "auth.user",
   "pk": 1,
   "fields": {
