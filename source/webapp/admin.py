@@ -1,9 +1,9 @@
 from django.contrib import admin
 
-from webapp.models import Poll
+from webapp.models import Poll, Choice
 
 admin.site.register(Poll)
+admin.site.register(Choice)
 
-# admin.site.register(Comment)
 # admin.site.register(Tag)
 
