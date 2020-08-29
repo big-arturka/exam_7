@@ -23,17 +23,21 @@
     <div class="card text-center">
         <div class="card-body">
             <h4 class="card-title">Вопрос: {{ poll.question }}</h4>
+            <h5>Этот опрос прошли {{ answer_count }} человек(-а).</h5>
             <a href="{% url 'answer' poll.pk %}" class="btn btn-primary">Пройти опрос</a>
             <a href="{% url 'poll_update' poll.pk %}" class="btn btn-primary">Изменить</a>
             <a href="{% url 'poll_delete' poll.pk %}" class="btn btn-primary">Удалить</a>
             <a href="{% url 'index' %}" class="btn btn-primary" >На главную</a>
             <div>
                 <h2>Варианты ответа:</h2>
+                <hr>
                 {% for choice in choices %}
-                    <h1>{{ choice.variant }}</h1>
-                    <a href="{% url 'choice_update' choice.pk %}" class="btn btn-primary">Изменить</a>
-                    <a href="{% url 'choice_delete' choice.pk %}" class="btn btn-primary">Удалить</a>
+                            <h3>{{ choice.variant }}</h3>
+                            <a href="{% url 'choice_update' choice.pk %}" class="btn btn-primary">Изменить</a>
+                            <a href="{% url 'choice_delete' choice.pk %}" class="btn btn-primary">Удалить</a>
+                            <hr>
                 {% endfor %}
+
             </div>
 
         </div>

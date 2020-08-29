@@ -1,7 +1,7 @@
 from django.urls import reverse, reverse_lazy
 
 from webapp.forms import PollForm, ChoiceForm
-from webapp.models import Poll, Choice
+from webapp.models import Poll, Choice, Answer
 from django.views.generic import DetailView, CreateView, UpdateView, DeleteView, ListView
 
 
@@ -22,6 +22,9 @@ class PollView(DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         choices = self.object.choices.all()
+
+        answer_count = Answer.objects.filter(poll_id=self.kwargs.get('pk')).count()
+        context['answer_count'] = answer_count
         context['choices'] = choices
         context['form'] = ChoiceForm()
 
