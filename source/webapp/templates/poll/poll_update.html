@@ -1,20 +1,20 @@
 {% extends 'base.html' %}
-{% block title %}Update product{% endblock %}
+{% block title %}Update question{% endblock %}
 
 {% block menu %}
     <li class="nav-item active">
-        <a class="nav-link" href="{% url 'product_create' %}">Добавить новый продукт</a>
+        <a class="nav-link" href="{% url 'poll_create' %}">Добавить новый вопрос</a>
     </li>
     <li class="nav-item active">
-        <a class="nav-link" href="{% url 'product_view' product.pk %}">Отмена</a>
+        <a class="nav-link" href="{% url 'poll_view' poll.pk %}">Отмена</a>
     </li>
 {% endblock %}
 
 {% block content %}
     <div class="form">
-        <h1 class="title">Update Product</h1>
+        <h1 class="title">Update Question</h1>
 
-        {% url 'product_update' pk=product.pk as action_url %}
+        {% url 'poll_update' poll.pk as action_url %}
         {% include 'partial/form.html' with action_url=action_url form_method='post' button_text='Обновить' %}
 
     </div>
