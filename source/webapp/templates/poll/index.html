@@ -16,6 +16,7 @@
                 <div class="card-body">
                     <h5 class="card-title">{{ poll.question }}</h5>
                     <p class="card-text"> {{ poll.created_at }}</p>
+                    <a href="{% url 'answer' poll.pk %}" class="btn btn-primary">Пройти опрос</a>
                     <a href="{% url 'poll_view' poll.pk %}" class="btn btn-primary">Подробнее</a>
                     <a href="{% url 'poll_update' poll.pk %}" class="btn btn-primary">Изменить</a>
                     <a href="{% url 'poll_delete' poll.pk %}" class="btn btn-primary">Удалить</a>

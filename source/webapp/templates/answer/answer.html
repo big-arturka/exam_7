@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %}ANSWER{% endblock %}
+
+{% block menu %}
+    <li class="nav-item active">
+        <a class="nav-link" href="{% url 'index' %}">Назад</a>
+    </li>
+{% endblock %}
+
+
+{% block content %}
+<div class="container">
+    <h1 class="title">ANSWER</h1>
+
+    <div class="card text-center">
+        <div class="card-body">
+            <h4 class="card-title">{{ poll.question }}</h4>
+            <form action="{% url 'answer' poll.pk %}" method="post">
+                {% for choice in choices %}
+                    {% csrf_token %}
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="answer" id="selected_answer-{{ choice.pk }}" value="{{ choice.pk }}">
+                            <label class="form-check-label" for="selected_answer-{{ choice.pk }}">{{ choice.variant }}</label>
+                        </div>
+                    {% endfor %}
+                    <p><input class="btn btn-primary" type="submit" name="answers" value="Сохранить"></p>
+                </form>
+        </div>
+
+        <div class="card-footer text-muted">
+            Дата создания: {{ poll.created_at }}
+        </div>
+
+    </div>
+</div>
+{% endblock %}
