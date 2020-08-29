@@ -11,6 +11,9 @@
     <li class="nav-item active">
         <a class="nav-link" href="{% url 'poll_delete' poll.pk %}">Удалить</a>
     </li>
+    <li class="nav-item active">
+        <a class="nav-link" href="{% url 'choice_add' poll.pk %}">Добавить вариант ответа</a>
+    </li>
 {% endblock %}
 
 
@@ -26,6 +29,8 @@
             <div>
                 {% for choice in choices %}
                     <p>{{ choice.variant }}</p>
+                    <a href="{% url 'choice_update' choice.pk %}" class="btn btn-primary">Изменить</a>
+                    <a href="{% url 'choice_delete' choice.pk %}" class="btn btn-primary">Удалить</a>
                 {% endfor %}
             </div>
 

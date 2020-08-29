@@ -4,20 +4,19 @@
 
 {% block menu %}
     <li class="nav-item active">
-        <a class="nav-link" href="{% url 'product_view' product.pk %}">Отмена</a>
+        <a class="nav-link" href="{% url 'poll_view' poll.pk %}">Отмена</a>
     </li>
 {% endblock %}
 
 {% block content %}
 <div class="card">
-    <form action="{% url 'product_delete' product.pk %}" method="post">
+    <form action="{% url 'choice_delete' choice.pk %}" method="post">
         {% csrf_token %}
         <h5 class="card-header">Удаление</h5>
         <div class="card-body">
-            <h5 class="card-title">Вы действительно хотите удалить товар "{{ product.name }}"?</h5>
-            <p class="card-text">Описание товара: {{ product.description }}</p>
+            <h5 class="card-title">Вы действительно хотите удалить вариант ответа "{{ choice.variant }}"?</h5>
             <p><input type="submit" class="btn btn-primary btn-lg btn-block" value="Да"></p>
-            <a class="btn btn-primary btn-lg btn-block"  href="{% url 'product_view' product.pk %}">Нет</a>
+            <a class="btn btn-primary btn-lg btn-block"  href="{% url 'poll_view' poll.pk %}">Нет</a>
         </div>
     </form>
 </div>
