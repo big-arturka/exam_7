@@ -23,3 +23,17 @@ class Choice(models.Model):
     class Meta:
         verbose_name = 'Вариант'
         verbose_name_plural = 'Варианты'
+
+
+class Answer(models.Model):
+    poll = models.ForeignKey('webapp.Poll', related_name='answer_poll', on_delete=models.CASCADE, verbose_name='Вопрос')
+    variant = models.ForeignKey('webapp.Choice', related_name='answer_choice',
+                                on_delete=models.CASCADE, verbose_name='Вариант')
+    created_at = models.DateTimeField(auto_now_add=True, verbose_name='Время создания')
+
+    def __str__(self):
+        return "{}. {}-{}".format(self.pk, self.poll, self.variant)
+
+    class Meta:
+        verbose_name = 'Ответ'
+        verbose_name_plural = 'Ответы'
