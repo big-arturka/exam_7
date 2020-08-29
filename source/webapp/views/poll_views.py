@@ -24,6 +24,18 @@ class PollView(DetailView):
         choices = self.object.choices.all()
 
         answer_count = Answer.objects.filter(poll_id=self.kwargs.get('pk')).count()
+        ans_dict = {}
+        for i in Answer.objects.filter(poll_id=self.kwargs.get('pk')):
+            key = i.variant.pk
+            if key in ans_dict:
+                ans_dict[key] += 1
+            else:
+                ans_dict[key] = 1
+
+        for i in ans_dict:
+            ans_dict[i] = ans_dict[i] / answer_count * 100
+
+        context['percents'] = ans_dict
         context['answer_count'] = answer_count
         context['choices'] = choices
         context['form'] = ChoiceForm()

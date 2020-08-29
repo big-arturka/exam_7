@@ -32,10 +32,13 @@
                 <h2>Варианты ответа:</h2>
                 <hr>
                 {% for choice in choices %}
-                            <h3>{{ choice.variant }}</h3>
-                            <a href="{% url 'choice_update' choice.pk %}" class="btn btn-primary">Изменить</a>
-                            <a href="{% url 'choice_delete' choice.pk %}" class="btn btn-primary">Удалить</a>
-                            <hr>
+                    {% for key, percent in percents.items %}
+                            {% if key == choice.pk %}{{ percent }}%{% endif %}
+                    {% endfor %}
+                        <h3>{{ choice.variant }}</h3>
+                        <a href="{% url 'choice_update' choice.pk %}" class="btn btn-primary">Изменить</a>
+                        <a href="{% url 'choice_delete' choice.pk %}" class="btn btn-primary">Удалить</a>
+                        <hr>
                 {% endfor %}
 
             </div>
